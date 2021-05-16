@@ -1,0 +1,32 @@
+# all crypto tickers from coingecko
+crypto = { {{ tickers }} }
+
+# includes common words and words used on crypto reddit that are also crypto names
+blacklist = {}
+
+# adding crypto reddit flavor to improve sentiment analysis, score 4.0 to -4.0
+new_words = {
+	"lambo": 4.0,
+	"rekt": -4.0,
+	"hodl": 2.0,
+	"fomo": 4.0,
+	"citron": -4.0,
+	"hidenburg": -4.0,
+	"moon": 4.0,
+	"highs": 2.0,
+	"mooning": 4.0,
+	"long": 2.0,
+	"short": -2.0,
+	"call": 4.0,
+	"calls": 4.0,
+	"put": -4.0,
+	"puts": -4.0,
+	"break": 2.0,
+	"tendie": 2.0,
+	"tendies": 2.0,
+	"town": 2.0,
+	"overvalues": -3.0,
+	"undervalued": 3.0,
+	"buy": 4.0,
+	"sell": -4.0
+}
